@@ -1,3 +1,6 @@
+# Para descobrir os números que somados são igual ao valor do target, podemos fazer um loop duplo, que analisará item por item.
+# Este é um método com o tempo de complexidade O(n²), pois a complexidade aumenta ao quadrado a cada item incluído na lista
+
 nums = [3, 3]
 target = 6
 
