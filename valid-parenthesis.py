@@ -7,16 +7,16 @@ def is_match(p1, p2):
         return True
     else:
         return False
-        
+
 stack = []
 is_balanced = True
 
-str = "(]"
+string = "(]"
 
-chars = str.split("")
-        
+chars = list(string)
+
 for i, char in enumerate(chars):
-    if char  in "{[(":
+    if char in "{[(":
         stack.append(char)
     else:
         if len(stack) == 0:
@@ -27,8 +27,8 @@ for i, char in enumerate(chars):
             if not is_match(top, char):
                 is_balanced = False
                 break
-        
+
 if len(stack) == 0 and is_balanced:
-    print("true")
+    print(True)
 else:
-    print("false")
+    print(False)
